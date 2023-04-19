@@ -7,7 +7,7 @@ function crearCarta() {
     const genero = document.getElementById("genero").value;
     const telefono = document.getElementById("telefono").value;
     
-    if (ssn && firstName && middleName && lastName && age && gender && telephone) {
+    if (rut && nombres && apPaterno && apMaterno && edad && genero && telefono) {
     const data = `RUT: ${rut}\nNombres: ${nombres}\nApellido Paterno: ${apPaterno}\nApellido Materno: ${apMaterno}\nEdad: ${edad}\nGénero: ${genero}\nTeléfono: ${telefono}`;
     const file = new Blob([data], { type: "text/plain" });
     const url = URL.createObjectURL(file);
@@ -18,7 +18,7 @@ function crearCarta() {
 
     link.click();
   } else {
-    alert("Please fill in all required fields.");
+    alert("Por favor, rellene todos los espacios en blanco.");
   }
 }
   
