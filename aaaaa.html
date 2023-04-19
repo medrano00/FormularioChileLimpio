@@ -16,23 +16,23 @@
         <form method="post">
             <div class="user">
                 <label for="rut">RUT</label>
-                <input type="text" id="rut" name="rut" required>
+                <input type="text" id="rut" name="rut" required minlength="9" maxlength="10">
             </div>
             <div class="user">
                 <label for="nombres">Nombres</label>
-                <input type="text" id="nombres" name="nombres" required>
+                <input type="text" id="nombres" name="nombres" required minlength="3" maxlength="20">
             </div>
             <div class="user">
                 <label for="appaterno">Apellido Paterno</label>
-                <input type="text" id="appaterno" name="appaterno" required>
+                <input type="text" id="appaterno" name="appaterno" required minlength="3" maxlength="20">
             </div>
             <div class="user">
                 <label for="apmaterno">Apellido Materno</label>
-                <input type="text" id="apmaterno" name="apmaterno" required>
+                <input type="text" id="apmaterno" name="apmaterno" required minlength="3" maxlength="20">
             </div>
             <div class="user">
                 <label for="edad">Edad</label>
-                <input type="number" id="edad" name="edad" required>
+                <input type="number" id="edad" name="edad" required min="18" max="35">
             </div>
             <div class="user">
                 <label for="genero">Género</label>
@@ -46,9 +46,10 @@
             </div>
             <div class="user">
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                <input type="tel" id="telefono" name="telefono" required minlength="9" maxlength="12">
             </div>
-            <button onclick="crearCarta()">Crear Carta</button>
+                <button class="btnEnviar" onclick="enviarCarta()">Enviar Carta</button>
+                <button class="btnCrear" onclick="crearCarta()">Crear Carta</button>
 </body>
 
 </html>

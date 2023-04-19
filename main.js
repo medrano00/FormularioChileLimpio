@@ -21,4 +21,19 @@ function crearCarta() {
     alert("Por favor, rellene todos los espacios en blanco.");
   }
 }
-  
+
+function enviarCarta(){
+  const rut = document.getElementById("rut").value;
+  const nombres = document.getElementById("nombres").value;
+  const apPaterno = document.getElementById("appaterno").value;
+  const apMaterno = document.getElementById("apmaterno").value;
+  const edad = document.getElementById("edad").value;
+  const genero = document.getElementById("genero").value;
+  const telefono = document.getElementById("telefono").value;
+  const link = document.createElement("a")
+  if (rut && nombres && apPaterno && apMaterno && edad && genero && telefono) {
+    link.click();
+  } else{
+    alert("Por favor, rellene todos los espacios en blanco.");
+  }
+}
